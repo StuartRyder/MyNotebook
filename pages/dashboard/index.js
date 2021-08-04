@@ -16,13 +16,14 @@ const createNotes=(array)=>{
         card.classList.add("card");
         card.id=id;
 
-        const insideHtml=  `<div class="card-header"><div class="card-heading">${heading}</div><div class="edit-note"><img src="../../assets/edit.svg" alt=""></div></div><div class="card-content">${content}</div>`
-        card.innerHtml=insideHtml;
+        const insideHtml=  `<div class="card-header"><div class="card-heading">${heading}</div><a href="../updatePage/updatePage.html?noteId=${id}"><div class="edit-note"><img src="../../assets/edit.svg" alt=""></div></a></div><div class="card-content">${content}</div>`
+        card.innerHTML=insideHtml;
         cardContainer.appendChild(card);
         //console.log(`<div class="card-header"><div class="card-heading">${heading}</div><div class="edit-note"><img src="../../assets/edit.svg" alt=""></div></div><div class="card-content">${content}</div>`);
     });
 };
 createNotes(cardData);
+
 window.addEventListener('load',() =>{
     body.classList.add("visible")
 })

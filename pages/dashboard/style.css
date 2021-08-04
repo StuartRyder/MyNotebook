@@ -11,7 +11,7 @@ body {
   width: 100%;
   background: linear-gradient(45deg, #707070, #186181);
   overflow: hidden;
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 1s ease;
 }
 
@@ -108,7 +108,7 @@ nav {
   padding: 10px;
   border-radius: 15px;
   word-break: break-word;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .card:hover {
   transform: scale(1.1);
@@ -116,3 +116,15 @@ nav {
  .card:active {
   transform: scale(1);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4); 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} */
