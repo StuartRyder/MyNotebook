@@ -97,14 +97,14 @@ textarea{
     font-size: 20px;
 }
 .create-note-heading{
-  border-radius: 15px;
-  height: 10%;
-  width: 60%;
-  color: black;
-  padding: 60px;
-  text-align: center;
-  outline: none;
-  font-size: 20px;
+    border-radius: 15px;
+    height: 10%;
+    width: 60%;
+    color: black;
+    padding: 60px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
 }
 input[type="submit"] {
     max-width: 100px;
