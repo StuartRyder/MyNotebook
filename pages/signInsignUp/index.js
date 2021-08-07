@@ -21,7 +21,7 @@ signInForm.addEventListener("submit", (event) => {
     return;
 }
 
-  fetch(`${apiUrl}/auth/signin`, {
+  fetch(`${apiurl}/auth/signin`, {
     mode:'cors',
     method: "POST",
     headers: {
@@ -76,8 +76,8 @@ signUpForm.addEventListener("submit",(event) => {
 
     }).then(res=>res.json())
     .then(data=>{
-        //console.log(data);
-        const {token}=data.data;
+        console.log(data);
+        const {token}=data;
         if(token){
             localStorage.setItem("jwt",token);
             location.href = "/pages/dashboard/dashboard.html";
@@ -86,7 +86,7 @@ signUpForm.addEventListener("submit",(event) => {
             alert("SignUp Again");
         }    })
     .catch(err=>{
-        alert("Error Signing up !!! Retry")
+        alert("Error Signing up Authrn !!! Retry")
         console.log(err);
     });
 })

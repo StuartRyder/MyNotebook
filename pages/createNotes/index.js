@@ -7,7 +7,7 @@ createNoteButton.addEventListener("click",()=>{
     const content =document.querySelector('.create-note-input').value;
     const heading =document.querySelector('.create-note-heading').value;
     if(token){
-        fetch(`${apiUrl}/note/add`, {
+        fetch(`${apiurl}/note/add`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -19,8 +19,8 @@ createNoteButton.addEventListener("click",()=>{
             .then((data) => {
 
             //   const { meassage } = data;
-            //   console.log(meassage);
-              if(data.meassage){
+              console.log(data);
+              if(data.message.length){
                 location.href = "/pages/dashboard/dashboard.html";
               }
             })

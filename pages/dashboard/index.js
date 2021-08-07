@@ -6,8 +6,7 @@ const createNoteButton =document.querySelector(".new-note");
 const cardContainer=document.querySelector(".card-container");
 const token = localStorage.getItem("jwt");
 
-
-logout.addEventListener('click',{}=>{
+logout.addEventListener('click',()=>{
     localStorage.removeItem("jwt");
     location.href = "/";
 })
