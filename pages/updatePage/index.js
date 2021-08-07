@@ -28,7 +28,7 @@ updateNoteButton.addEventListener("click",()=>{
 
             //   const { meassage } = data;
             //   console.log(meassage);
-              if(data.meassage){
+              if(data.message){
                 location.href = "/pages/dashboard/dashboard.html";
               }
             })
