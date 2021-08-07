@@ -108,7 +108,7 @@ nav {
   padding: 10px;
   border-radius: 15px;
   word-break: break-word;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .card:hover {
   transform: scale(1.1);
@@ -118,12 +118,15 @@ nav {
 }
 ::-webkit-scrollbar {
   width: 10px;
+  border-radius: 20px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.4); 
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px; 
 }
 ::-webkit-scrollbar-thumb {
   background: #888; 
+  border-radius: 20px;
 }
 /* ::-webkit-scrollbar-thumb:hover {
   background: #555; 
